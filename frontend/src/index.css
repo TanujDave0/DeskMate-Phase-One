@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #f3f7fa;
+    --bg-noise: radial-gradient(circle at 20% 20%, #e5f4ff 0%, transparent 46%),
+      radial-gradient(circle at 84% 12%, #d8ecff 0%, transparent 44%),
+      radial-gradient(circle at 56% 100%, #ffffff 0%, #eef4f8 80%);
+    --panel: rgba(255, 255, 255, 0.86);
+    --panel-strong: #ffffff;
+    --panel-border: rgba(152, 170, 194, 0.32);
+    --text-primary: #112336;
+    --text-secondary: #4f6074;
+    --accent: #007bcf;
+    --accent-strong: #0065ab;
+    --bot-surface: #ffffff;
+    --user-surface: linear-gradient(135deg, #0b8fde 0%, #006ab4 100%);
+  }
+
+  .dark {
+    --bg-primary: #06111b;
+    --bg-noise: radial-gradient(circle at 10% -20%, #123f66 0%, transparent 38%),
+      radial-gradient(circle at 90% -10%, #0c2f4f 0%, transparent 32%),
+      radial-gradient(circle at 50% 110%, #071724 0%, #050c14 84%);
+    --panel: rgba(10, 23, 36, 0.78);
+    --panel-strong: #0c1b2b;
+    --panel-border: rgba(88, 122, 154, 0.36);
+    --text-primary: #e5f2ff;
+    --text-secondary: #9db6cc;
+    --accent: #49c2ff;
+    --accent-strong: #28adef;
+    --bot-surface: #102131;
+    --user-surface: linear-gradient(135deg, #2da8e8 0%, #117fc2 100%);
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+    color: var(--text-primary);
+    background: var(--bg-noise);
+    background-color: var(--bg-primary);
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: color-mix(in srgb, var(--accent) 55%, transparent) transparent;
+  }
+
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--accent) 55%, transparent);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+}
+
+@layer components {
+  .app-shell {
+    background: var(--bg-noise);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+
+  .frosted {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  .panel-solid {
+    background: var(--panel-strong);
+    border: 1px solid var(--panel-border);
+  }
+
+  .label-mono {
+    font-family: 'IBM Plex Mono', 'Courier New', monospace;
+    letter-spacing: 0.08em;
+  }
+
+  .soft-shadow {
+    box-shadow: 0 16px 42px rgba(9, 35, 59, 0.12);
+  }
+
+  .dark .soft-shadow {
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.36);
+  }
+}
