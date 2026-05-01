@@ -1,6 +1,6 @@
-# FUNBOT Backend
+# DESKMATE Backend
 
-FastAPI service that turns `{text, sassLevel, history}` into a FUNBOT reply. All intelligence lives in the backend: LLM calls, prompt construction, sass-level routing, agent flow, and request summary logging. The frontend calls this as a black box.
+FastAPI service that turns `{text, sassLevel, history}` into a DESKMATE reply. All intelligence lives in the backend: LLM calls, prompt construction, sass-level routing, agent flow, and request summary logging. The frontend calls this as a black box.
 
 See `../BRAIN.md` and `../AGENTS.md` for product context and work rules. See `../SASS_LEVELS.md` for sass anchor definitions. See `RESEARCH.md` for the prior-art survey that informed these choices.
 
@@ -27,7 +27,7 @@ backend/
   config.py               # env: LLM_BACKEND, USE_AGENT, MAX_AGENT_ITERATIONS, GROQ_*, OPENROUTER_*, OLLAMA_*, TAVILY_API_KEY, MAX_WEB_SEARCH_RESULTS, LOG_*, PORT, CORS_ORIGINS
   logging_config.py       # setup_logging(): configures console + rotating file handler from config
   logs/
-    funbot.log            # active log file (gitignored); rotates at LOG_MAX_BYTES, keeps LOG_BACKUP_COUNT
+    deskmate.log            # active log file (gitignored); rotates at LOG_MAX_BYTES, keeps LOG_BACKUP_COUNT
   our_types/
     __init__.py
     types.py              # shared types: AgentStep, LLMTarget, GenerateAdapter, GenerateToolAdapter
@@ -131,11 +131,11 @@ Searches the web and returns the top results as formatted text.
 
 ## Logging
 
-`setup_logging()` (called at boot) attaches a console handler and a rotating file handler to the root logger. Logs write to `logs/funbot.log` by default.
+`setup_logging()` (called at boot) attaches a console handler and a rotating file handler to the root logger. Logs write to `logs/deskmate.log` by default.
 
 | Config             | Default            | Description                                                      |
 | ------------------ | ------------------ | ---------------------------------------------------------------- |
-| `LOG_FILE`         | `logs/funbot.log`  | Path to the log file. Directory is created automatically.        |
+| `LOG_FILE`         | `logs/deskmate.log`  | Path to the log file. Directory is created automatically.        |
 | `LOG_LEVEL`        | `INFO`             | Standard Python log level (`DEBUG`, `INFO`, `WARNING`, `ERROR`). |
 | `LOG_MAX_BYTES`    | `10485760` (10 MB) | File size at which rotation triggers.                            |
 | `LOG_BACKUP_COUNT` | `5`                | Number of rotated files to keep alongside the active log.        |

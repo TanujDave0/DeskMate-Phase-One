@@ -1,6 +1,6 @@
-# FUNBOT Frontend
+# DESKMATE Frontend
 
-React + Vite + Tailwind frontend for the FUNBOT chat UI.
+React + Vite + Tailwind frontend for the DESKMATE chat UI.
 
 ## Stack
 

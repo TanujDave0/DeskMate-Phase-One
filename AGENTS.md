@@ -1,6 +1,6 @@
 # AGENTS.md
 
-FUNBOT: TARS-inspired voice assistant with an adjustable 1-4 sass/personality dial. Helpful first, funny second.
+DESKMATE: TARS-inspired voice assistant with an adjustable 1-4 sass/personality dial. Helpful first, funny second.
 
 ---
 

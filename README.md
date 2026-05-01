@@ -1,10 +1,10 @@
-# FUNBOT
+# DESKMATE
 
 TARS-inspired voice assistant with an adjustable sass dial (1-4): useful first, funny second.
 
 ## Personal Project Note
 
-FUNBOT is a solo, long-term project. I am building it as a path toward a desk companion that can eventually replace my Google Assistant.
+DESKMATE is a solo, long-term project. I am building it as a path toward a desk companion that can eventually replace my Google Assistant.
 
 Core reasons for building it:
 

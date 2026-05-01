@@ -42,7 +42,7 @@ function InputBar({ onSend, sassLevel, onSassChange, isLoading }) {
               value={input}
               onChange={(event) => setInput(event.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder={isLoading ? 'FUNBOT is thinking...' : isListening ? 'Listening...' : 'Message FUNBOT...'}
+              placeholder={isLoading ? 'DESKMATE is thinking...' : isListening ? 'Listening...' : 'Message DESKMATE...'}
               disabled={isLoading}
               className="flex-1 bg-transparent outline-none text-sm sm:text-[15px] text-[color:var(--text-primary)] placeholder:text-[color:var(--text-secondary)]"
             />

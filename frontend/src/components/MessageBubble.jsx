@@ -81,7 +81,7 @@ function MessageBubble({ message }) {
   return (
     <div className="flex flex-col items-start gap-1.5">
       <span className="label-mono text-[10px] sm:text-xs text-[color:var(--accent)] pl-1">
-        FUNBOT
+        DESKMATE
       </span>
       <div className="max-w-[90%] sm:max-w-[78%] px-4 sm:px-5 py-3 rounded-3xl rounded-bl-lg text-sm sm:text-[15px] leading-relaxed text-[color:var(--text-primary)] panel-solid soft-shadow [background:var(--bot-surface)]">
         <div className="prose prose-sm dark:prose-invert max-w-none">

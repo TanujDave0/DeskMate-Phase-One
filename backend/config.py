@@ -22,7 +22,7 @@ MAX_WEB_SEARCH_RESULTS = int(os.getenv("MAX_WEB_SEARCH_RESULTS", "3"))
 
 MAX_AGENT_ITERATIONS = int(os.getenv("MAX_AGENT_ITERATIONS", "5"))
 
-LOG_FILE = os.getenv("LOG_FILE", "logs/funbot.log")
+LOG_FILE = os.getenv("LOG_FILE", "logs/deskmate.log")
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
 LOG_MAX_BYTES = int(os.getenv("LOG_MAX_BYTES", str(10 * 1024 * 1024)))
 LOG_BACKUP_COUNT = int(os.getenv("LOG_BACKUP_COUNT", "5"))

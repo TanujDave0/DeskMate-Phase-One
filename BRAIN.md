@@ -1,4 +1,4 @@
-# FUNBOT - Project Brain (Seed for New Repo)
+# DESKMATE - Project Brain (Seed for New Repo)
 
 ---
 

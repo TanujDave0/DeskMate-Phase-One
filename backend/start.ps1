@@ -8,5 +8,5 @@ if ($listening) {
     Start-Sleep 1
 }
 
-Write-Host "Starting FUNBOT backend on port $PORT..."
+Write-Host "Starting DESKMATE backend on port $PORT..."
 .\.venv\Scripts\uvicorn app:app --reload --port $PORT

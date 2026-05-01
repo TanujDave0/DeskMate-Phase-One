@@ -13,7 +13,7 @@ function ChatHistory({ messages, isLoading }) {
     return (
       <div className="min-h-full flex flex-col items-center justify-center px-4 py-8">
         <div className="frosted soft-shadow rounded-3xl px-6 py-7 sm:px-8 sm:py-8 max-w-xl w-full text-center">
-          <p className="label-mono text-xs text-[color:var(--accent)] mb-2">FUNBOT READY</p>
+          <p className="label-mono text-xs text-[color:var(--accent)] mb-2">DESKMATE READY</p>
           <h2 className="text-xl sm:text-2xl font-semibold text-[color:var(--text-primary)]">
             Ask anything. Keep it useful.
           </h2>

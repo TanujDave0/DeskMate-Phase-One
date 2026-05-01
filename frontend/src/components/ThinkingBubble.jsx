@@ -25,7 +25,7 @@ function ThinkingBubble() {
   return (
     <div className="flex flex-col items-start gap-1.5">
       <span className="label-mono text-[10px] sm:text-xs text-[color:var(--accent)] pl-1">
-        FUNBOT
+        DESKMATE
       </span>
       <div className="max-w-[90%] sm:max-w-[78%] rounded-3xl rounded-bl-lg px-4 sm:px-5 py-3 panel-solid soft-shadow [background:var(--bot-surface)] flex items-center gap-2">
         <span aria-hidden="true" className="inline-block w-4 text-center text-[color:var(--accent)] font-semibold">
